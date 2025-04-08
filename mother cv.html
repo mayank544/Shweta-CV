@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shweta Jha - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    .hero {
+      height: auto;
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(270deg, #ff00c8, #00d0ff, #ff9100);
+      background-size: 600% 600%;
+      animation: gradientShift 20s ease infinite;
+    }
+    @keyframes gradientShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      text-shadow: 0 0 15px #fff;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+    .btns {
+      margin-top: 20px;
+    }
+    button {
+      background: #ffffff20;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #00d0ff;
+      color: #000;
+    }
+    .glass-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+      animation: fadeIn 2s ease forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h2 {
+      color: #00ffd9;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      border-left: 5px solid #ff00c8;
+      padding-left: 15px;
+    }
+    p, li {
+      color: #eee;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .highlight {
+      color: #ffd700;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Shweta Jha</h1>
+    <p id="intro">A passionate professional who blends warmth, wisdom, and work ethic into everything she does. Shweta brings a golden heart and a sharp mind to every role she plays — both in the office and in life.</p>
+    <p>📞 +91 987-303-3480 | 📧 shwetajha882@gmail.com | 📍 Delhi, India</p>
+    <div class="btns">
+      <button onclick="window.print()">📄 Download PDF</button>
+      <button onclick="toggleLanguage()">🌐 Toggle Hindi/English</button>
+    </div>
+  </section>
+
+  <div class="glass-container">
+    <h2>🌟 Profile</h2>
+    <p id="profile">
+      Shweta Jha is a <span class="highlight">dedicated, disciplined, and dynamic</span> individual with rich experience as a Sales Executive, Receptionist, and Marketing Assistant. She brings elegance and efficiency to every workspace — ensuring clients feel welcomed, valued, and heard. Her talent lies not just in multitasking, but in doing everything with a smile.
+    </p>
+  </div>
+
+  <div class="glass-container">
+    <h2>🛠️ Skills</h2>
+    <ul id="skills">
+      <li>Client Relationship Management</li>
+      <li>Lead Generation & Product Promotion</li>
+      <li>Front Desk Operations & Appointment Handling</li>
+      <li>AI Tools (ChatGPT), Canva, Photoshop</li>
+      <li>Marketing Campaign Support</li>
+    </ul>
+  </div>
+
+  <div class="glass-container">
+    <h2>🧠 Soft Skills</h2>
+    <ul id="soft-skills">
+      <li>Excellent Communication</li>
+      <li>Active Listening & Empathy</li>
+      <li>Time Management & Adaptability</li>
+      <li>Fast Learning & Grace Under Pressure</li>
+    </ul>
+  </div>
+
+  <div class="glass-container">
+    <h2>💼 Work Experience</h2>
+    <ul id="experience">
+      <li><strong>Receptionist</strong> – Four Point India Pvt. Ltd. (Present)</li>
+      <li><strong>Sales Executive & Receptionist</strong>– Welsion India Pvt. Ltd. </li>
+      <li><strong>Remote Freelance</strong> – Online Sales Entry & Lead Generation</li>
+    </ul>
+  </div>
+
+  <div class="glass-container">
+    <h2>📚 Education</h2>
+    <ul id="education">
+      <li>Master of Computer Applications – Sun-Tek Institute, New Delhi (2013–14)</li>
+      <li>Bachelor of Arts (Hons) – TMBU University, Bihar (2012–14)</li>
+      <li>Senior Secondary – CBSE, Delhi (2007–08)</li>
+    </ul>
+  </div>
+
+  <div class="glass-container">
+    <h2>🎨 Hobbies & Interests</h2>
+    <ul id="hobbies">
+      <li><strong>Cooking</strong>: Loves experimenting with diverse recipes</li>
+      <li><strong>Music</strong>: Finds peace in melodies and rhythm</li>
+    </ul>
+  </div>
+
+  <footer>
+    Made by shweta.
+  </footer>
+
+  <script>
+    let hindiMode = false;
+    function toggleLanguage() {
+      hindiMode = !hindiMode;
+
+      document.getElementById('intro').innerText = hindiMode ?
+        'एक समर्पित और मेहनती प्रोफेशनल जो हर काम को दिल से करती हैं। श्वेता ज्झा हर भूमिका में गरिमा और मुस्कान लाती हैं।' :
+        'A passionate professional who blends warmth, wisdom, and work ethic into everything she does. Shweta brings a golden heart and a sharp mind to every role she plays — both in the office and in life.';
+
+      document.getElementById('profile').innerText = hindiMode ?
+        'श्वेता ज्झा एक समर्पित और अनुशासित प्रोफेशनल हैं जिनके पास सेल्स, रिसेप्शन और मार्केटिंग का अच्छा अनुभव है। वे अपने क्लाइंट्स को सम्मान और गर्मजोशी से सेवा देती हैं।' :
+        'Shweta Jha is a dedicated, disciplined, and dynamic individual with rich experience as a Sales Executive, Receptionist, and Marketing Assistant. She brings elegance and efficiency to every workspace — ensuring clients feel welcomed, valued, and heard.';
+
+      document.getElementById('skills').innerHTML = hindiMode ?
+        '<li>क्लाइंट संबंध प्रबंधन</li><li>लीड जनरेशन और उत्पाद प्रचार</li><li>फ्रंट डेस्क संचालन</li><li>एआई टूल्स (ChatGPT), Canva, Photoshop</li><li>मार्केटिंग समर्थन</li>' :
+        '<li>Client Relationship Management</li><li>Lead Generation & Product Promotion</li><li>Front Desk Operations & Appointment Handling</li><li>AI Tools (ChatGPT), Canva, Photoshop</li><li>Marketing Campaign Support</li>';
+
+      document.getElementById('soft-skills').innerHTML = hindiMode ?
+        '<li>उत्कृष्ट संचार कौशल</li><li>सक्रिय सुनना</li><li>समय प्रबंधन और अनुकूलनशीलता</li><li>तेजी से सीखना</li>' :
+        '<li>Excellent Communication</li><li>Active Listening & Empathy</li><li>Time Management & Adaptability</li><li>Fast Learning & Grace Under Pressure</li>';
+
+      document.getElementById('experience').innerHTML = hindiMode ?
+        '<li><strong>रिसेप्शनिस्ट</strong> – वेल्सियन इंडिया प्रा. लि. (वर्तमान)</li><li><strong>सेल्स एग्जीक्यूटिव & रिसेप्शनिस्ट</strong> – फोर पॉइंट इंडिया प्रा. लि.</li><li><strong>फ्रीलांस</strong> – ऑनलाइन सेल्स एंट्री और लीड जनरेशन</li>' :
+        '<li><strong>Receptionist</strong> – Welsion India Pvt. Ltd. (Present)</li><li><strong>Sales Executive & Receptionist</strong> – Four Point India Pvt. Ltd.</li><li><strong>Remote Freelance</strong> – Online Sales Entry & Lead Generation</li>';
+
+      document.getElementById('education').innerHTML = hindiMode ?
+        '<li>एमसीए – सन-टेक इंस्टिट्यूट, दिल्ली (2013–14)</li><li>बी.ए. ऑनर्स – टीएमबीयू, बिहार (2012–14)</li><li>सीनियर सेकेंडरी – सीबीएसई, दिल्ली (2007–08)</li>' :
+        '<li>Master of Computer Applications – Sun-Tek Institute, New Delhi (2013–14)</li><li>Bachelor of Arts (Hons) – TMBU University, Bihar (2012–14)</li><li>Senior Secondary – CBSE, Delhi (2007–08)</li>';
+
+      document.getElementById('hobbies').innerHTML = hindiMode ?
+        '<li><strong>खाना बनाना</strong>: नए व्यंजनों का शौक</li><li><strong>संगीत</strong>: धुनों में शांति मिलती है</li>' :
+        '<li><strong>Cooking</strong>: Loves experimenting with diverse recipes</li><li><strong>Music</strong>: Finds peace in melodies and rhythm</li>';
+    }
+  </script>
+
+</body>
+</html>
